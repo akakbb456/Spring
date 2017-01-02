@@ -12,11 +12,22 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
-     
-     <bean id="userService" class="spring.di1.UserServiceImpl"></bean>
-     
-     <bean id="userBean" class="spring.di1.UserBean">
-     	<property name="userService" ref="userService"/>
+        
+     <context:annotation-config/>
+     <bean id="userService1" class="spring.di1.UserServiceImpl1">
+     	<property name="name" value="우우우"/>
+     	<property name="tel" value="010"/>
+     	<property name="age" value="20"/>
      </bean>
+     
+     <bean id="userService2" class="spring.di1.UserServiceImpl2">
+     	<property name="name" value="미미미"/>
+     	<property name="tel" value="010"/>
+     	<property name="age" value="20"/>
+     </bean>
+     
+     
+     <bean id="userBean" class="spring.di1.UserBean"/>
+     	
      
 </beans>  
