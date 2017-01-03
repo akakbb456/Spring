@@ -1,4 +1,4 @@
-package spring.di1;
+package spring.di2;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,7 +11,7 @@ public class App {
 		//AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/di2/applicationContext.xml");
 		
 		AbstractApplicationContext context = 
-				new GenericXmlApplicationContext("classpath:spring/di1/applicationContext.xml");
+				new GenericXmlApplicationContext("classpath:spring/di2/applicationContext.xml");
 		try {
 			//UserBean bean = (UserBean)context.getBean("userBean");
 			UserBean bean = context.getBean(UserBean.class);

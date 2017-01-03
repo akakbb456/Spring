@@ -14,21 +14,16 @@
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
   
   <context:annotation-config/>
- <bean id="userService1" class="spring.di1.UserServiceImpl1">
+ <bean id="userService" class="spring.di2.UserServiceImpl1">
     <property name="name" value="감바스"/>
     <property name="tel" value="010-7108-4646"/>
     
     <property name="age" value="6545456"/>
  </bean>
  
- <!-- <bean id="userService2" class="spring.di1.UserServiceImpl2">
-    <property name="name" value="감바래"/>
-    <property name="tel" value="010-7108-4646"/>
-    
-    <property name="age" value="747879"/>
- </bean> -->
+
  
- <bean id="userBean" class="spring.di1.UserBean"/>
+ <bean id="userBean" class="spring.di2.UserBean"/>
  
   
 
